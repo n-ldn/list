@@ -65,7 +65,7 @@ public class Einkaufsliste implements List{
             return null;
         }
         Gegenstand next = head;
-        while(next.getNext() != null){
+        while(next.getNext().getNext() != null){
             next = next.getNext();
         }
         String output = "Successfully removed " + next.getElement();
